@@ -11,18 +11,35 @@
 </head>
 <body>
 
-    <div id="app">
+  <div id="app">
+    <v-app>
+    <headers></headers>
+    <v-content>
       <router-view>
       </router-view>
+    </v-content>
+    </v-app>
+  </div>
+  <template id="home">
+    <div>
+      <footers></footers>
     </div>
-    <template id="home">
-    </template>
-    <template id="contact">
-    </template>
-    <template id="announcement">
-    </template>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
-    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  </template>
+  <template id="contact">
+    <div>
+      <footers></footers>
+    </div>
+  </template>
+  <template id="announcement">
+    <div>
+      <footers></footers>
+    </div>
+  </template>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+  <script src="js/components/header.js"></script>
+  <script src="js/components/footer.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

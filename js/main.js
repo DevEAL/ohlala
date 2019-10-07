@@ -35,5 +35,5 @@ var app = new Vue({
 
     }
   },
-    vuetify: new vuetify(),
+  vuetify: new Vuetify(),
 }).$mount('#app')
