@@ -1,0 +1,83 @@
+.navbar {
+  background: #070829;
+  color: #fff;
+  padding: 1rem 3rem; }
+  .navbar .row {
+    width: 100%; }
+    .navbar .row .col-6, .navbar .row .col-12 {
+      margin: 0;
+      padding: 0; }
+  .navbar .navbar-toggler {
+    margin-right: 1rem; }
+    .navbar .navbar-toggler img {
+      width: 30px; }
+  .navbar .navbar-brand {
+    width: 180px; }
+  .navbar .sup-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .navbar .sup-nav .navbar-social {
+      background: #FF73FF;
+      border-radius: 50%;
+      color: #070829;
+      margin: 0 auto;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      margin: 0 .7rem;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .navbar .sup-nav .navbar-social:hover {
+        background: #FF6D4F; }
+  .navbar .navbar-nav .nav-item {
+    margin-left: 1.5rem; }
+    .navbar .navbar-nav .nav-item .nav-link {
+      cursor: pointer;
+      color: #FF73FF;
+      font-family: "Fira Sans Condensed", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .navbar .navbar-nav .nav-item:hover .nav-link {
+      color: #FF6D4F; }
+
+#getting-started {
+  font-family: "Playfair Display SC", serif;
+  font-size: 40px; }
+
+.titulo {
+  text-align: center;
+  font-size: 18pt;
+  color: #131C51; }
+  .titulo .texto_titulo {
+    color: #00B0FF;
+    font-size: 61pt;
+    line-height: 100px; }
+    .titulo .texto_titulo span {
+      font-size: 75pt; }
+
+.formulario {
+  font-size: 14pt;
+  color: #131C51; }
+  .formulario input {
+    border-radius: 0%;
+    border-color: #131C51; }
+  .formulario select {
+    border-radius: 0%;
+    border-color: #131C51; }
+  .formulario textarea {
+    border-radius: 0%;
+    border-color: #131C51; }
+  .formulario .borde {
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 10%; }
+  .formulario .boton {
+    background: #F1A21C;
+    border: none;
+    font-size: 18pt; }
+
+/*# sourceMappingURL=styles.css.map */
