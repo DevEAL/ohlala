@@ -1,7 +1,7 @@
 Vue.component("headers", {
   template: // html
   `
-  <nav class="navbar navbar-expand-lg ">
+  <nav class="navbar navbar-expand-lg fixed">
     <div class="container-fluid">
       <div class="row">
         <div class="col-6">
@@ -15,7 +15,6 @@ Vue.component("headers", {
           <a class="navbar-social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
           <a class="navbar-social" href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
         </div>
-
         <div class="col-12">
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
@@ -33,7 +32,6 @@ Vue.component("headers", {
         </div>
       </div>
     </div>
-
   </nav>
   `
 })

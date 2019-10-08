@@ -45,4 +45,8 @@
     .navbar .navbar-nav .nav-item:hover .nav-link {
       color: #FF6D4F; }
 
+#getting-started {
+  font-family: "Playfair Display SC", serif;
+  font-size: 40px; }
+
 /*# sourceMappingURL=styles.css.map */
