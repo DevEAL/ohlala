@@ -6,7 +6,7 @@ require 'Phpmailer/Exception.php';
 require 'Phpmailer/PHPMailer.php';
 require 'Phpmailer/SMTP.php';
 
-  class SendMai{
+  class SendMail{
     static function EnviarCorreo($asunto, $body){
         $mail = new PHPMailer(true);
 
