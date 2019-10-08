@@ -10,10 +10,10 @@ const announcement = {
 }
 // Constantes de rutas
 const router = new VueRouter({
-  router: [
+  routers: [
     {
       path: '/',
-      component: home
+      component: Home
     },
     {
       path: '/announcement',
@@ -21,7 +21,7 @@ const router = new VueRouter({
     },
     {
       path: '/contact',
-      component: contact
+      component: Contact
     }
   ]
 })
@@ -30,10 +30,5 @@ const router = new VueRouter({
 var app = new Vue({
   router,
   el: '#app',
-  data() {
-    return {
-
-    }
-  },
   vuetify: new Vuetify(),
 }).$mount('#app')
