@@ -1,7 +1,7 @@
 Vue.component("headers", {
   template: // html
   `
-  <nav class="navbar navbar-expand-lg fixed">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <div class="row">
         <div class="col-6">

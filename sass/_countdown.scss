@@ -1,4 +1,134 @@
-#getting-started{
-    font-family: $playfair-sc;
-    font-size: 40px;
+.counter{
+    margin-top: 11rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5rem;
+    background-image: url('../img/counter_bg.jpg');
+    font-family: $fira;
+    .row{
+        background: $bg-blue;
+        padding: 2rem;
+        position: relative;
+        .pink-line{
+            position: absolute;
+            width: 1px;
+            height: 80%;
+            background: $oh-pink;
+            top: 50%;
+            transform: translateY(-50%); 
+            left: 50%;
+        }
+        .faltan,.noviembre{
+            font-size: 40px;
+            color: $oh-orange;
+            margin: 0;
+            font-weight: 400;
+            letter-spacing: 10px;
+        }
+        .counter-box{
+            #getting-started{
+                font-family: $playfair-sc;
+                font-size: 70px;
+                color:$oh-green;
+            }
+            .time{
+                margin: 10px 0;
+                display: flex;
+                justify-content: center;
+                span{
+                    display: block;
+                    width: 130px;
+                    color: $tx-yellow;
+                    font-weight: 600;
+                }
+            }
+            .btn-inscribe{
+                font-size: 20px;
+                background: $oh-pink;
+                margin-top: 20px;
+                padding: .2rem 1rem;
+                text-transform: uppercase;
+                color: $bg-blue;
+                font-weight: 600;
+                border-radius: none;
+            }
+        }
+        .description-box{
+            .edicion{
+                color: $tx-yellow;
+                letter-spacing: 8px;
+                font-weight: 600;
+                margin-bottom: 1.2rem;
+            }
+            .ornamental{
+                color: #fff;
+                font-size: 60px;
+                font-family: $playfair;
+                margin-bottom: 1.2rem;
+            }
+            .date{
+                font-size: 40px;
+                margin-top: 1.2rem;
+                font-family: $playfair;
+                color: $oh-green;
+                .line{
+                    color: $tx-yellow;
+                    margin: 0 .5rem; 
+                }
+                .year{color: $tx-blue-two;}
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .counter{
+        margin-top: 8rem;
+        background-size: cover;
+        .row{
+            padding: 1rem;
+            .pink-line{
+                width: 80%;
+                height: 1px;
+                transform: translateX(-50%);
+            }
+            .counter-box{ margin-bottom: 1rem; }
+        }
+    }
+}
+
+@media(max-width:414px){
+    .counter{
+        margin-top: 8.5rem;
+        padding: 2rem;
+        .row{
+            .pink-line{
+                top: 52.5%;
+            }
+            .faltan,.noviembre{ font-size: 25px; }
+            .counter-box{
+                #getting-started{ font-size: 50px; }
+                .time{
+                    span{ width: 90px; }
+                }
+                .btn-inscribe{
+                    font-size: 16px;
+                }
+            }
+            .description-box{
+                .edicion{
+                    font-size: 16px;
+                    margin-bottom: .8rem;
+                }
+                .ornamental{ 
+                    font-size: 36px; 
+                    margin-bottom: .8rem;
+                }
+                .date{
+                    font-size: 30px;
+                    margin-top: .8rem;
+                }
+            }
+        }
+    }
 }

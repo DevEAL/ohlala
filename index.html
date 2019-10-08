@@ -7,19 +7,19 @@
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600,700|Playfair+Display+SC:900|Playfair+Display:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,600,700|Playfair+Display+SC:900|Playfair+Display:700&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Ohlala</title>
 </head>
 <body>
-  <div></div>
   
 
   <div id="app">
     <v-app>
       <headers></headers>
       <countdowns></countdowns>
+      <manifiestos></manifiestos>
       <v-content>
         <router-view>
         </router-view>
@@ -28,6 +28,7 @@
   </div>
   <template id="home">
     <div>
+      
       <footers></footers>
     </div>
   </template>
@@ -50,6 +51,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
   <script src="js/components/header.js"></script>
   <script src="js/components/countdown.js"></script>
+  <script src="js/components/manifiesto.js"></script>
   <script src="js/components/footer.js"></script>
   <script src="js/main.js"></script>
   <script type="text/javascript">
