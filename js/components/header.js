@@ -1,18 +1,39 @@
 Vue.component("headers", {
   template: // html
   `
-  <div>
-    <v-app-bar>
-      <v-row cols="12">
-        <v-col cols="12" xl="12" lg="12" md="12" sm="12" xs="12">
-          <v-tabs>
-            <v-tab to="/">Inicio</v-tab>
-            <v-tab to="/announcement">Convocatoria</v-tab>
-            <v-tab to="/contact">Contacto</v-tab>
-          </v-tabs>
-        </v-col>
-      </v-row>
-    </v-app-bar>
-  </div>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="img/svg/menu-icon.svg" alt="">
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/svg/ohlala-logo.svg" alt="Logo Ohlala"> </a>
+        </div>
+        <div class="col-6 sup-nav">
+          <a class="navbar-social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a class="navbar-social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a class="navbar-social" href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="col-12">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" to="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" to="/announcement">Convocatoria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" to="/contact">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </nav>
   `
 })

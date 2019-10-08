@@ -1,0 +1,48 @@
+.navbar {
+  background: #070829;
+  color: #fff;
+  padding: 1rem 3rem; }
+  .navbar .row {
+    width: 100%; }
+    .navbar .row .col-6, .navbar .row .col-12 {
+      margin: 0;
+      padding: 0; }
+  .navbar .navbar-toggler {
+    margin-right: 1rem; }
+    .navbar .navbar-toggler img {
+      width: 30px; }
+  .navbar .navbar-brand {
+    width: 180px; }
+  .navbar .sup-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .navbar .sup-nav .navbar-social {
+      background: #FF73FF;
+      border-radius: 50%;
+      color: #070829;
+      margin: 0 auto;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      margin: 0 .7rem;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .navbar .sup-nav .navbar-social:hover {
+        background: #FF6D4F; }
+  .navbar .navbar-nav .nav-item {
+    margin-left: 1.5rem; }
+    .navbar .navbar-nav .nav-item .nav-link {
+      cursor: pointer;
+      color: #FF73FF;
+      font-family: "Fira Sans Condensed", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .navbar .navbar-nav .nav-item:hover .nav-link {
+      color: #FF6D4F; }
+
+/*# sourceMappingURL=styles.css.map */
