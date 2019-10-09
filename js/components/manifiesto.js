@@ -6,11 +6,11 @@ Vue.component("manifiestos", {
             <div class="row">
                 <div class="col-12 content">
                     <h2>MANIFIESTO OHLALA</h2>
-                    <img class="manifiesto-icon" src="img/svg/manifiesto-one.svg" alt="">
+                    <img src="img/svg/manifiesto-one.svg" alt="">
                     <p>APASIONADOS POR CONTAR HISTORIAS, DECIDIMOS TRANSFORMAR EL FORMATO DE ‘FERIA TRADICIONAL’ EN ESPACIOS DE ENCUENTRO CON UN TEMA DISTINTO CADA EDICIÓN.</p>
-                    <img class="manifiesto-icon" src="img/svg/manifiesto-two.svg" alt="">
+                    <img src="img/svg/manifiesto-two.svg" alt="">
                     <p>SOÑAMOS CON ABRIR LAS PUERTAS DE NUESTRO UNIVERSO A LA MAYOR CANTIDAD DE PERSONAS.</p>
-                    <img class="manifiesto-icon" src="img/svg/manifiesto-three.svg" alt="">
+                    <img src="img/svg/manifiesto-three.svg" alt="">
                     <p>REALIZAMOS CURADURÍAS ESPECIALES DE PRODUCTOS Y MARCAS CON EL FIN DE CREAR UNA COMPOSICIÓN COHERENTE PARA LAS PERSONAS QUE NOS VISITAN.</p>
                 </div>
             </div>

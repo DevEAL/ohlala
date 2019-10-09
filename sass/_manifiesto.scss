@@ -23,6 +23,10 @@
     }
 }
 
+@media(max-width:768px){
+    .manifiesto{ padding: 2rem; }
+}
+
 @media(max-width:414px){
     .manifiesto{
         padding: 1rem;

@@ -1,0 +1,89 @@
+.se-parte{
+    background: $oh-purple;
+    color: #fff;
+    font-family: $fira;
+    padding: 4rem;
+    .content{
+        .section-icon{
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            .line-icon{
+                position: relative;
+                transform: translateY(-2px);
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 40px;
+                    height: 4px;
+                    background: #fff;
+                }
+            }
+            img{
+                margin-left:60px;
+                width: 50px;
+            }
+        }
+        .tx-content{
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 48px;
+            margin: none;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+    .section-btn{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .btn-se-parte{
+            font-size: 30px;
+            text-transform: uppercase;
+            background: $oh-yellow;
+            color: $oh-blue;
+            font-weight: 600;
+            padding:.3rem 2rem;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .se-parte{
+        padding: 2rem;
+        .content{
+            .section-icon{
+                justify-content: center;
+                .line-icon{
+                    position: relative;
+                    transform: translateY(-2px);
+                    &::before{
+                        transform: translateX(-20px);
+                    }
+                }
+                img{
+                    margin-left:40px;
+                    margin-right: 40px;
+                }
+            }
+            .tx-content{ text-align: center; }
+        }
+    }
+}
+
+@media(max-width:414px){
+    .se-parte{
+        padding: 0rem;
+        .content{
+            .tx-content{
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
+        .section-btn{
+            .btn-se-parte{ font-size: 26px; }
+        }
+    }
+}

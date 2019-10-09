@@ -3,37 +3,28 @@ const Home = {
   template: '#home'
 }
 const Contact = {
-    template: '#contact'
+  template: '#contact'
 }
 const announcement = {
-    template: '#announcement'
+  template: '#announcement'
 }
+
+const routes = [
+  { path: '/', component: Home },
+  { path: '/announcement', component: announcement },
+  { path: '/Contact', component: Contact }
+]
+
 // Constantes de rutas
 const router = new VueRouter({
-  router: [
-    {
-      path: '/',
-      component: home
-    },
-    {
-      path: '/announcement',
-      component: announcement
-    },
-    {
-      path: '/contact',
-      component: contact
-    }
-  ]
+  routes // short for `routes: routes`
 })
 // declaro la instancia Vue
 
 var app = new Vue({
   router,
   el: '#app',
-  data() {
-    return {
-
-    }
-  },
-  vuetify: new Vuetify(),
+    data: {
+    },
+vuetify: new Vuetify(),
 }).$mount('#app')

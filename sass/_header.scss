@@ -2,6 +2,7 @@
     background: $bg-blue;
     color: #fff;
     padding: 1rem 3rem;
+    transition: .5s;
     .row{
         width: 100%;
         .col-6,.col-12{
@@ -16,6 +17,7 @@
         }
     }
     .navbar-brand{
+        transition: .5s;
         width: 180px;
     }
     .sup-nav{
@@ -23,13 +25,13 @@
         justify-content: flex-end;
         align-items: center;
         .navbar-social{
+            transition: .5s;
             background: $oh-pink;
             border-radius: 50%;
             color:$bg-blue;
             margin: 0 auto;
             width: 35px;
             height: 35px;
-            display: flex;
             margin: 0 .7rem;
             font-size: 20px;
             display: flex;
@@ -57,6 +59,20 @@
                     color: $oh-orange;
                 }
             }
+        }
+    }
+}
+
+.navbar-scroll{
+    padding: .5rem 3rem;
+    .navbar-brand{
+        width: 100px;
+    }
+    .sup-nav{
+        .navbar-social{
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
         }
     }
 }

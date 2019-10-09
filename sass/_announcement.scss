@@ -1,0 +1,38 @@
+.titulo{
+    text-align: center;
+    font-size: 18pt;
+    color: $oh-blue;
+    .texto_titulo{
+        color: $tx-blue-two;
+        font-size: 61pt;
+        line-height: 100px;
+        span{
+            font-size: 75pt;
+        }
+    }
+}
+.formulario{
+    font-size: 14pt;
+    color: $oh-blue;
+    input {
+        border-radius: 0%;
+        border-color: $oh-blue;
+    }
+    select{
+        border-radius: 0%;
+        border-color: $oh-blue;
+    }
+    textarea{
+        border-radius: 0%;
+        border-color: $oh-blue;
+    }
+    .borde{
+        border-bottom: 2px solid #cccccc;
+        padding-bottom: 10%;
+    }
+    .boton{
+        background: $tx-yellow;
+        border: none;
+        font-size: 18pt;
+    }
+}
