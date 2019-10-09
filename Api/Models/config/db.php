@@ -13,7 +13,7 @@ class bd{
         $this->user     = 'root';
         $this->password = "";
         //$this->password = "6#vWHD_$";
-        $this->charset  = 'utf8mb4';
+        $this->charset  = 'utf8_general_ci';
     }
 
     //mysql -e "USE todolistdb; select*from todolist" --user=azure --password=6#vWHD_$ --port=49175 --bind-address=52.176.6.0
