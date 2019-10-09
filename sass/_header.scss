@@ -1,0 +1,104 @@
+.navbar{
+    background: $bg-blue;
+    color: #fff;
+    padding: 1rem 3rem;
+    transition: .5s;
+    .row{
+        width: 100%;
+        .col-6,.col-12{
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .navbar-toggler{
+        margin-right: 1rem;
+        img{
+            width: 30px;
+        }
+    }
+    .navbar-brand{
+        transition: .5s;
+        width: 180px;
+    }
+    .sup-nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .navbar-social{
+            transition: .5s;
+            background: $oh-pink;
+            border-radius: 50%;
+            color:$bg-blue;
+            margin: 0 auto;
+            width: 35px;
+            height: 35px;
+            margin: 0 .7rem;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                background: $oh-orange;
+            }
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            margin-left: 1.5rem;
+            .nav-link{
+                cursor: pointer;
+                color: $oh-pink;
+                font-family: $fira;
+                font-weight: 600;
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            &:hover{
+                .nav-link{
+                    color: $oh-orange;
+                }
+            }
+        }
+    }
+}
+
+.navbar-scroll{
+    padding: .5rem 3rem;
+    .navbar-brand{
+        width: 100px;
+    }
+    .sup-nav{
+        .navbar-social{
+            width: 30px;
+            height: 30px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .navbar{
+        .navbar-brand{ width: 160px; }
+    }
+}
+
+@media(max-width:414px){
+    .navbar{
+        .navbar-toggler{
+            img{
+                width: 20px;
+            }
+        }
+        padding: 1rem 2rem;
+        .navbar-brand{ width: 120px; }
+        .sup-nav{
+            .navbar-social{
+                width: 25px;
+                height: 25px;
+                margin: 0 .5rem;
+                font-size: 16px;
+            }
+        }
+    }
+}

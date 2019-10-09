@@ -1,0 +1,128 @@
+.experience{
+    background-image: url('../img/experience_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: $fira;
+    padding: 6rem 10rem;
+    text-transform: uppercase;
+    text-align: center;
+    .experience-title{
+        margin-bottom: 2rem;
+        h2{
+            font-size: 50px;
+            font-weight: 700;
+            color: $oh-magenta;
+            letter-spacing: 6px;
+        }
+    }
+
+    .owl-experience{
+        .owl-nav{
+            font-size: 30px;
+            position: relative;
+            bottom: 160px;
+            color: $oh-green;
+            button{
+                position: absolute;
+                &:hover{
+                    background: none;
+                }
+                &:focus{
+                    outline:0;
+                }
+                &.owl-prev{
+                    transform: rotate(180deg);
+                    left: -6%;
+                }
+                &.owl-next{
+                    right: -6%;
+                }
+            }
+        }
+        .owl-dots{
+            margin-top: 3rem;
+            button{
+                transition: all .5s;
+                span{
+                    background: $oh-green;
+                }
+                &:hover, &.active, &:focus{
+                    outline: none;
+                    span{
+                        background: $oh-green;
+                        opacity: .5;
+                        outline:0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px){
+    .experience{
+        padding: 4rem;
+        .experience-title{ margin-bottom: 2rem; }
+        .owl-experience{
+            .owl-nav{ bottom: 110px; }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .experience{
+        padding: 3rem;
+        .experience-title{
+            margin-bottom: 0rem;
+            h2{ font-size: 40px; }
+        }
+        .owl-experience{
+            .owl-nav{
+                font-size: 25px;
+            }
+            .owl-dots{
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:414px){
+    .experience{
+        padding: 1rem 0rem;
+        .experience-title{
+            h2{
+                font-size: 40px;
+                letter-spacing: 4px;
+                margin: 0; 
+            }
+        }
+        .owl-experience{
+            .owl-nav{
+                font-size: 25px;
+                bottom: 160px;
+                button{
+                    &.owl-prev{ left: 1%; }
+                    &.owl-next{ right: 1%; }
+                }
+            }
+            .owl-dots{
+                margin-top: 1.5rem;
+                button{
+                    transition: all .5s;
+                    span{
+                        background: $oh-green;
+                    }
+                    &:hover, &.active, &:focus{
+                        outline: none;
+                        span{
+                            background: $oh-green;
+                            opacity: .5;
+                            outline:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
