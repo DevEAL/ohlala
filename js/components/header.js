@@ -19,13 +19,13 @@ Vue.component("headers", {
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" to="/">Inicio</a>
+                <router-link class="nav-link" to="/">Inicio</router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" to="/announcement">Convocatoria</a>
+                <router-link class="nav-link" to="/announcement">Convocatoria</router-link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" to="/contact">Contacto</a>
+                <router-link class="nav-link" to="/contact">Contacto</router-link>
               </li>
             </ul>
           </div>

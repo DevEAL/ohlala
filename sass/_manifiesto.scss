@@ -3,9 +3,36 @@
     text-transform: uppercase;
     text-align: center;
     padding: 4rem;
+    font-family: $fira;
     .content{
         h2{
             font-size: 50px;
+            font-weight: 700;
+            color: $oh-pink;
+            letter-spacing: 6px;
+        }
+        img{
+            width: 100px;
+            margin: 3rem 0;
+        }
+        p{
+            font-size: 24px;
+            color: $oh-blue;
+            margin: 0;
+        }
+    }
+}
+
+@media(max-width:414px){
+    .manifiesto{
+        padding: 1rem;
+        .content{
+            h2{ font-size: 40px; }
+            img{ margin: 2rem 0; }
+            p{
+                font-size: 22px;
+                line-height: 26px;
+            }
         }
     }
 }

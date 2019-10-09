@@ -167,8 +167,30 @@
   background: #FFDD4C;
   text-transform: uppercase;
   text-align: center;
-  padding: 4rem; }
+  padding: 4rem;
+  font-family: "Fira Sans Condensed", sans-serif; }
   .manifiesto .content h2 {
-    font-size: 50px; }
+    font-size: 50px;
+    font-weight: 700;
+    color: #FF73FF;
+    letter-spacing: 6px; }
+  .manifiesto .content img {
+    width: 100px;
+    margin: 3rem 0; }
+  .manifiesto .content p {
+    font-size: 24px;
+    color: #131C51;
+    margin: 0; }
+
+@media (max-width: 414px) {
+  .manifiesto {
+    padding: 1rem; }
+    .manifiesto .content h2 {
+      font-size: 40px; }
+    .manifiesto .content img {
+      margin: 2rem 0; }
+    .manifiesto .content p {
+      font-size: 22px;
+      line-height: 26px; } }
 
 /*# sourceMappingURL=styles.css.map */
