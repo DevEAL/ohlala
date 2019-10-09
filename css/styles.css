@@ -45,10 +45,124 @@
     .navbar .navbar-nav .nav-item:hover .nav-link {
       color: #FF6D4F; }
 
-#getting-started {
-  font-family: "Playfair Display SC", serif;
-  font-size: 40px; }
+@media (max-width: 768px) {
+  .navbar .navbar-brand {
+    width: 160px; } }
+@media (max-width: 414px) {
+  .navbar {
+    padding: 1rem 2rem; }
+    .navbar .navbar-toggler img {
+      width: 20px; }
+    .navbar .navbar-brand {
+      width: 120px; }
+    .navbar .sup-nav .navbar-social {
+      width: 25px;
+      height: 25px;
+      margin: 0 .5rem;
+      font-size: 16px; } }
+.counter {
+  margin-top: 11rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5rem;
+  background-image: url("../img/counter_bg.jpg");
+  font-family: "Fira Sans Condensed", sans-serif; }
+  .counter .row {
+    background: #070829;
+    padding: 2rem;
+    position: relative; }
+    .counter .row .pink-line {
+      position: absolute;
+      width: 1px;
+      height: 80%;
+      background: #FF73FF;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 50%; }
+    .counter .row .faltan, .counter .row .noviembre {
+      font-size: 40px;
+      color: #FF6D4F;
+      margin: 0;
+      font-weight: 400;
+      letter-spacing: 10px; }
+    .counter .row .counter-box #getting-started {
+      font-family: "Playfair Display SC", serif;
+      font-size: 70px;
+      color: #56DFAF; }
+    .counter .row .counter-box .time {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center; }
+      .counter .row .counter-box .time span {
+        display: block;
+        width: 130px;
+        color: #F1A21C;
+        font-weight: 600; }
+    .counter .row .counter-box .btn-inscribe {
+      font-size: 20px;
+      background: #FF73FF;
+      margin-top: 20px;
+      padding: .2rem 1rem;
+      text-transform: uppercase;
+      color: #070829;
+      font-weight: 600;
+      border-radius: none; }
+    .counter .row .description-box .edicion {
+      color: #F1A21C;
+      letter-spacing: 8px;
+      font-weight: 600;
+      margin-bottom: 1.2rem; }
+    .counter .row .description-box .ornamental {
+      color: #fff;
+      font-size: 60px;
+      font-family: "Playfair Display", serif;
+      margin-bottom: 1.2rem; }
+    .counter .row .description-box .date {
+      font-size: 40px;
+      margin-top: 1.2rem;
+      font-family: "Playfair Display", serif;
+      color: #56DFAF; }
+      .counter .row .description-box .date .line {
+        color: #F1A21C;
+        margin: 0 .5rem; }
+      .counter .row .description-box .date .year {
+        color: #00B0FF; }
 
+@media (max-width: 768px) {
+  .counter {
+    margin-top: 8rem;
+    background-size: cover; }
+    .counter .row {
+      padding: 1rem; }
+      .counter .row .pink-line {
+        width: 80%;
+        height: 1px;
+        transform: translateX(-50%); }
+      .counter .row .counter-box {
+        margin-bottom: 1rem; } }
+@media (max-width: 414px) {
+  .counter {
+    margin-top: 8.5rem;
+    padding: 2rem; }
+    .counter .row .pink-line {
+      top: 52.5%; }
+    .counter .row .faltan, .counter .row .noviembre {
+      font-size: 25px; }
+    .counter .row .counter-box #getting-started {
+      font-size: 50px; }
+    .counter .row .counter-box .time span {
+      width: 90px; }
+    .counter .row .counter-box .btn-inscribe {
+      font-size: 16px; }
+    .counter .row .description-box .edicion {
+      font-size: 16px;
+      margin-bottom: .8rem; }
+    .counter .row .description-box .ornamental {
+      font-size: 36px;
+      margin-bottom: .8rem; }
+    .counter .row .description-box .date {
+      font-size: 30px;
+      margin-top: .8rem; } }
 .titulo {
   text-align: center;
   font-size: 18pt;
@@ -79,5 +193,13 @@
     background: #F1A21C;
     border: none;
     font-size: 18pt; }
+
+.manifiesto {
+  background: #FFDD4C;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 4rem; }
+  .manifiesto .content h2 {
+    font-size: 50px; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -8,7 +8,7 @@ Vue.component("announcement", {
           <p class="texto_titulo">FORMULARIO <br/><span class="texto_titulo">INSCRIPCIÓN</span></p>
           <p>PARA INSCRIBIRTE COMPLETA EL <br/>SIGUIENTE FORMULARIO</p>
         </div>
-        <div class="col-6 formulario">
+        <div class="col-lg-6 col-sm-12 formulario">
           <div class="form-group">
             <label for="NombreMarca">NOMBRE DE LA MARCA*</label>
             <input type="text" class="form-control" name="NombreMarca">
@@ -64,7 +64,7 @@ Vue.component("announcement", {
             <textarea class="form-control" name="Descripcion" rows="3" placeholder="MAXIMO 500 PALABRAS"></textarea>
           </div>
         </div>
-        <div class="col-6 formulario">
+        <div class="col-lg-6 col-sm-12 formulario">
           <div class="form-group">
             <label for="">¿CÓMO SE RELACIONA SU MARCA Y/PRODUCTOS CON LA TEMÁTICA DE LA EDICIÓN ORNAMENTAL?*</label>
             <textarea class="form-control" name="DescripcionMarca" rows="3" placeholder="MAXIMO 300 PALABRAS"></textarea>
