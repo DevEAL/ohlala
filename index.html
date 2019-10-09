@@ -17,7 +17,6 @@
     <div>
       <headers></headers>
       <countdowns></countdowns>
-      <manifiestos></manifiestos>
       <div>
         <router-view></router-view>
       </div>
@@ -25,15 +24,21 @@
   </div>
   <template id="home">
     <div>
-      hello 1
+      <manifiestos></manifiestos>
+      <Contact></Contact>
     </div>
   </template>
   <template id="contact">
     <div>
-      hello 2
+      <Contact></Contact>
     </div>
   </template>
   <template id="announcement">
+    <div>
+      <Contact></Contact>
+    </div>
+  </template>
+  <template id="inscription">
     <div>
       <announcement></announcement>
     </div>
@@ -49,6 +54,7 @@
   <script src="js/components/header.js"></script>
   <script src="js/components/countdown.js"></script>
   <script src="js/components/manifiesto.js"></script>
+  <script src="js/components/contact.js"></script>
   <script src="js/components/footer.js"></script>
   <script src="js/main.js"></script>
   <script type="text/javascript">

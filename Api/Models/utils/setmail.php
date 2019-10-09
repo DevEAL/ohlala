@@ -1,10 +1,11 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
+use  PHPMailer\PHPMailer\SMTP ;
 use PHPMailer\PHPMailer\Exception;
 
-require 'Phpmailer/Exception.php';
-require 'Phpmailer/PHPMailer.php';
-require 'Phpmailer/SMTP.php';
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
 
   class SendMail{
     static function EnviarCorreo($asunto, $body){
@@ -14,7 +15,7 @@ require 'Phpmailer/SMTP.php';
             //Server settings
             $mail->SMTPDebug = 0;                      // Enable verbose debug output
             $mail->isSMTP();                                            // Send using SMTP
-            $mail->Host       = 'smtp1.gmail.com';                    // Set the SMTP server to send through
+            $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
             $mail->Username   = 'sendohlala@gmail.com';                     // SMTP username
             $mail->Password   = 'Enalgun1*';                               // SMTP password
@@ -23,23 +24,25 @@ require 'Phpmailer/SMTP.php';
 
             //Recipients
             $mail->setFrom('sendohlala@gmail.com', 'Admin Ohlala');
-            $mail->addAddress('ohlalaemprende');     // Add a recipient
+            // $mail->addAddress('ohlalaemprende');     // Add a recipient
             $mail->addAddress('backend@enalgunlugarestudio.com');             // Name is optional
             $mail->addAddress('desarrollo@enalgunlugarestudio.com');
 
-            // Attachments
-            $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-            $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+            // // Attachments
+            // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+            // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
             // Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = $asunto;
+            $mail->Subject = utf8_decode($asunto);
             $mail->Body    = $body;
 
             $mail->send();
-            echo 'Message has been sent';
+
+            return true;
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            return false;
         }
     }
   }

@@ -2,6 +2,7 @@
     text-align: center;
     font-size: 18pt;
     color: $oh-blue;
+    font-family: $fira;
     .texto_titulo{
         color: $tx-blue-two;
         font-size: 61pt;
@@ -14,6 +15,7 @@
 .formulario{
     font-size: 14pt;
     color: $oh-blue;
+    font-family: $fira;
     input {
         border-radius: 0%;
         border-color: $oh-blue;
@@ -32,7 +34,27 @@
     }
     .boton{
         background: $tx-yellow;
+        color: $oh-blue;
         border: none;
         font-size: 18pt;
+    }
+}
+@media(max-width:414px) {
+    .titulo{
+        font-size: 14pt;
+        .texto_titulo{
+            color: $tx-blue-two;
+            font-size: 25pt;
+            line-height: 58px;
+            span{
+                font-size: 35pt;
+            }
+        }
+    }
+    .formulario{
+        font-size: 10pt;
+        .boton{
+            font-size: 14pt;
+        }
     }
 }

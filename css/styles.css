@@ -166,7 +166,8 @@
 .titulo {
   text-align: center;
   font-size: 18pt;
-  color: #131C51; }
+  color: #131C51;
+  font-family: "Fira Sans Condensed", sans-serif; }
   .titulo .texto_titulo {
     color: #00B0FF;
     font-size: 61pt;
@@ -176,7 +177,8 @@
 
 .formulario {
   font-size: 14pt;
-  color: #131C51; }
+  color: #131C51;
+  font-family: "Fira Sans Condensed", sans-serif; }
   .formulario input {
     border-radius: 0%;
     border-color: #131C51; }
@@ -191,15 +193,66 @@
     padding-bottom: 10%; }
   .formulario .boton {
     background: #F1A21C;
+    color: #131C51;
     border: none;
     font-size: 18pt; }
 
+@media (max-width: 414px) {
+  .titulo {
+    font-size: 14pt; }
+    .titulo .texto_titulo {
+      color: #00B0FF;
+      font-size: 25pt;
+      line-height: 58px; }
+      .titulo .texto_titulo span {
+        font-size: 35pt; }
+
+  .formulario {
+    font-size: 10pt; }
+    .formulario .boton {
+      font-size: 14pt; } }
 .manifiesto {
   background: #FFDD4C;
   text-transform: uppercase;
   text-align: center;
-  padding: 4rem; }
+  padding: 4rem;
+  font-family: "Fira Sans Condensed", sans-serif; }
   .manifiesto .content h2 {
-    font-size: 50px; }
+    font-size: 50px;
+    font-weight: 700;
+    color: #FF73FF;
+    letter-spacing: 6px; }
+  .manifiesto .content img {
+    width: 100px;
+    margin: 3rem 0; }
+  .manifiesto .content p {
+    font-size: 24px;
+    color: #131C51;
+    margin: 0; }
+
+@media (max-width: 414px) {
+  .manifiesto {
+    padding: 1rem; }
+    .manifiesto .content h2 {
+      font-size: 40px; }
+    .manifiesto .content img {
+      margin: 2rem 0; }
+    .manifiesto .content p {
+      font-size: 22px;
+      line-height: 26px; } }
+.contact {
+  text-align: center;
+  margin: auto;
+  font-family: "Fira Sans Condensed", sans-serif; }
+  .contact .title {
+    color: #FF6D4F;
+    font-size: 40pt;
+    line-height: 50px; }
+    .contact .title span {
+      font-size: 60pt; }
+  .contact .parrafo {
+    color: #131C51;
+    font-size: 18pt;
+    line-height: 30px; }
 
 /*# sourceMappingURL=styles.css.map */
