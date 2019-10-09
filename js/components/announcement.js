@@ -2,7 +2,7 @@ Vue.component("announcement", {
   template: // html
   `
   <div class="container">
-    <form action="http://localhost:8080/ohlala/Api/index.php" method="POST" enctype="multipart/form-data">
+    <form action="Api/index.php" method="POST" enctype="multipart/form-data">
       <div class="row">
         <div class="col-12 justify-content-center align-center titulo">
           <p class="texto_titulo">FORMULARIO <br/><span class="texto_titulo">INSCRIPCIÓN</span></p>
@@ -35,7 +35,7 @@ Vue.component("announcement", {
           </div>
           <div class="form-group borde">
             <label for="">CATEGORÍA*</label>
-            <select class="form-control" name="IdCategoria" placeholder="CATEGORÍA">
+            <select class="form-control custom-select" name="IdCategoria" placeholder="CATEGORÍA">
               <option>CATEGORÍA</option>
               <option>Accesorios</option>
               <option>Arte</option>
@@ -92,7 +92,7 @@ Vue.component("announcement", {
           </div>
           <div class="form-group">
             <label for="">¿POR QUÉ MEDIO SE ENTERÓ DE LA FERIA?*</label>
-            <select type="" class="form-control" name="IdMedio" required>
+            <select type="" class="form-control custom-select" name="IdMedio" required>
               <option>MEDIO</option>
               <option>Información de un Amigo</option>
               <option>Redes Sociales</option>

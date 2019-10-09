@@ -8,7 +8,7 @@ Vue.component("Contact", {
         <p class="parrafo">NO DUDES EN CONTACTARNOS<br/> PARA MAYOR INFORMACIÓN <br/> O PREGUNTAS.</p>
       </div>
       <div class="col-lg-6 col-sm-12 formulario">
-        <form action="http://localhost:8080/ohlala/Api/Contact.php" method="POST" enctype="multipart/form-data">
+        <form action="Api/Contact.php" method="POST" enctype="multipart/form-data">
           <div class="form-group">
             <label for="NombreMarca">NOMBRE*</label>
             <input type="text" class="form-control" name="Name" required>

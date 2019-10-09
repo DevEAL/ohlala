@@ -34,6 +34,7 @@ class CrearHTML{
         </div>
         <div>
           <p>PÁGINA WEB: <span>'.$body['LinkMarca'].'</span></p>
+          <p>PORTAFOLIO: <span>'.$body['portafolio'].'</span></p>
           <p>LINK REDES SOCIALES: <span>'.$body['LinkMarca1'].'</span></p>
           <p>DESCRIPCIÓN DE LA MARCA</p>
           <p>'.$body['Descripcion'].'</p>

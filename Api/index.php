@@ -25,13 +25,18 @@
       "IdMedio" =>  "{$_POST['IdMedio']}"
     );
 
-    $response= $Controller->Insert($body);
-    // if (isset($_FILES['portafolio'])) {
-    //   $name = $_FILES['portafolio']['name'];
-    //   $archivo = $_FILES['portafolio']['tmp_name'];
+    if (isset($_FILES['portafolio'])) {
+      $name = $_FILES['portafolio']['name'];
+      $archivo = $_FILES['portafolio']['tmp_name'];
+      $body['portafolio'] = "http://localhost:8080/ohlala/Api/Doc/".$name;
 
-    //   Subir::Documento($name, $archivo);
-    // }
+      $subir = Subir::Documento($name, $archivo);
+
+    } else {
+      $body['portafolio'] = 'Sin Portafolio';
+    }
+    $response= $Controller->Insert($body);
+
     header("Location:/ohlala/#/");
 
 ?>

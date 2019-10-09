@@ -24,7 +24,7 @@ require 'PHPMailer/SMTP.php';
 
             //Recipients
             $mail->setFrom('sendohlala@gmail.com', 'Admin Ohlala');
-            // $mail->addAddress('ohlalaemprende');     // Add a recipient
+            // $mail->addAddress('ohlalaemprende@gmail.com');     // Add a recipient
             $mail->addAddress('backend@enalgunlugarestudio.com');             // Name is optional
             $mail->addAddress('desarrollo@enalgunlugarestudio.com');
 
