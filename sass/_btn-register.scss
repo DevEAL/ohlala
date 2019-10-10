@@ -19,16 +19,36 @@
         }
     }
 }
-
-@media(max-width:414px){
+@media(max-width:636px){
     .section-register{
-        padding: 2rem;
+        padding: 3rem;
+        .content{
+            text-align: center;
+            .btn-inscribe{
+                font-size: 40px;
+                padding: .8rem 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:470px){
+    .section-register{
+        padding: 1rem;
         .content{
             text-align: center;
             .btn-inscribe{
                 font-size: 30px;
                 padding: .8rem 2rem;
             }
+        }
+    }
+}
+@media(max-width:336px){
+    .section-register{
+        padding: 0rem;
+        .content{
+            .btn-inscribe{ font-size: 25px; }
         }
     }
 }

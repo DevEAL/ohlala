@@ -7,8 +7,9 @@ Vue.component("Contact", {
     <div class="container cont-contact">
       <div class="row">
         <div class="col-lg-6 col-sm-12 contact">
-          <p class="title">FORMULARIO<br/><span>CONTACTO</span></p>
+          <p class="title"><span>CONTACTO</span></p>
           <p class="parrafo">NO DUDES EN CONTACTARNOS<br/> PARA MAYOR INFORMACIÓN <br/> O PREGUNTAS.</p>
+          <p class="info">*FORMULARIO <b>NO</b> VALIDO PARA INSCRIPCIÓN AL EVENTO <br/><router-link to="/inscription" class="btn-inscribe">IR A CONVOCATORIA </router-link></p>
         </div>
         <div class="col-lg-6 col-sm-12 formulario">
           <form action="Api/Contact.php" method="POST" enctype="multipart/form-data">
@@ -17,7 +18,7 @@ Vue.component("Contact", {
               <input type="text" class="form-control" name="Name" required>
             </div>
             <div class="form-group">
-              <label for="NombreMarca">CORREO ELECTÓNICO*</label>
+              <label for="NombreMarca">CORREO ELECTRÓNICO*</label>
               <input type="text" class="form-control" name="Email" required>
             </div>
             <div class="form-group">

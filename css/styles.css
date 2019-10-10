@@ -59,7 +59,7 @@
 @media (max-width: 768px) {
   .navbar .navbar-brand {
     width: 160px; } }
-@media (max-width: 414px) {
+@media (max-width: 444px) {
   .navbar {
     padding: 1rem 2rem; }
     .navbar .navbar-toggler img {
@@ -140,7 +140,13 @@
       .counter .row .description-box .date .year {
         color: #00B0FF; }
 
-@media (max-width: 768px) {
+@media (max-width: 1220px) {
+  .counter .row .counter-box #getting-started {
+    font-size: 60px; } }
+@media (max-width: 1180px) {
+  .counter .row .counter-box #getting-started {
+    font-size: 50px; } }
+@media (max-width: 991px) {
   .counter {
     margin-top: 8rem;
     background-size: cover; }
@@ -149,21 +155,53 @@
       .counter .row .pink-line {
         width: 80%;
         height: 1px;
+        top: 47%;
         transform: translateX(-50%); }
       .counter .row .counter-box {
-        margin-bottom: 1rem; } }
-@media (max-width: 414px) {
+        padding-bottom: 2rem; }
+        .counter .row .counter-box #getting-started {
+          font-size: 70px; } }
+@media (max-width: 768px) {
+  .counter {
+    padding: 3rem; }
+    .counter .row .counter-box #getting-started {
+      font-size: 65px; } }
+@media (max-width: 630px) {
+  .counter .row .pink-line {
+    top: 50%; }
+  .counter .row .faltan, .counter .row .noviembre {
+    font-size: 35px; }
+  .counter .row .counter-box #getting-started {
+    font-size: 55px; }
+  .counter .row .counter-box .time span {
+    width: 100px; }
+  .counter .row .counter-box .btn-inscribe {
+    font-size: 20px; }
+  .counter .row .description-box .edicion {
+    font-size: 22px;
+    margin-bottom: .4rem; }
+  .counter .row .description-box .ornamental {
+    font-size: 45px;
+    margin-bottom: .8rem; }
+  .counter .row .description-box .date {
+    font-size: 30px;
+    margin-top: .8rem; } }
+@media (max-width: 630px) {
+  .counter .row .counter-box #getting-started {
+    font-size: 45px; } }
+@media (max-width: 444px) {
   .counter {
     margin-top: 8.5rem;
     padding: 2rem; }
-    .counter .row .pink-line {
-      top: 52.5%; }
     .counter .row .faltan, .counter .row .noviembre {
       font-size: 25px; }
     .counter .row .counter-box #getting-started {
-      font-size: 50px; }
-    .counter .row .counter-box .time span {
-      width: 90px; }
+      font-size: 40px; }
+    .counter .row .counter-box .time {
+      margin-bottom: 2rem; }
+      .counter .row .counter-box .time span {
+        width: 90px;
+        font-size: 14px; }
     .counter .row .counter-box .btn-inscribe {
       font-size: 16px; }
     .counter .row .description-box .edicion {
@@ -175,6 +213,12 @@
     .counter .row .description-box .date {
       font-size: 30px;
       margin-top: .8rem; } }
+@media (max-width: 375px) {
+  .counter .row .counter-box #getting-started {
+    font-size: 35px; }
+    .counter .row .counter-box #getting-started .time span {
+      width: 70px;
+      font-size: 12px; } }
 .manifiesto {
   background: #FFDD4C;
   text-transform: uppercase;
@@ -447,7 +491,13 @@
       font-size: 25px; }
     .experience .owl-experience .owl-dots {
       margin-top: 2rem; } }
-@media (max-width: 414px) {
+@media (max-width: 598px) {
+  .experience .owl-experience .owl-nav {
+    font-size: 25px;
+    bottom: 200px; }
+  .experience .owl-experience .owl-dots {
+    margin-top: 2rem; } }
+@media (max-width: 444px) {
   .experience {
     padding: 1rem 0rem; }
     .experience .experience-title h2 {
@@ -455,7 +505,6 @@
       letter-spacing: 4px;
       margin: 0; }
     .experience .owl-experience .owl-nav {
-      font-size: 25px;
       bottom: 160px; }
       .experience .owl-experience .owl-nav button.owl-prev {
         left: 1%; }
@@ -623,7 +672,7 @@
 @media (max-width: 768px) {
   .ornamental-edition {
     padding: 4rem; } }
-@media (max-width: 414px) {
+@media (max-width: 540px) {
   .ornamental-edition {
     padding: 1rem; }
     .ornamental-edition .title h2 {
@@ -667,7 +716,7 @@
     padding: 2rem; }
     .we-look .look-bg {
       padding: 2rem; } }
-@media (max-width: 414px) {
+@media (max-width: 500px) {
   .we-look {
     padding: 1rem; }
     .we-look .look-bg {
@@ -764,14 +813,27 @@
       .section-register .content .btn-inscribe:hover {
         background: #4901a0; }
 
-@media (max-width: 414px) {
+@media (max-width: 636px) {
   .section-register {
-    padding: 2rem; }
+    padding: 3rem; }
+    .section-register .content {
+      text-align: center; }
+      .section-register .content .btn-inscribe {
+        font-size: 40px;
+        padding: .8rem 2rem; } }
+@media (max-width: 470px) {
+  .section-register {
+    padding: 1rem; }
     .section-register .content {
       text-align: center; }
       .section-register .content .btn-inscribe {
         font-size: 30px;
         padding: .8rem 2rem; } }
+@media (max-width: 336px) {
+  .section-register {
+    padding: 0rem; }
+    .section-register .content .btn-inscribe {
+      font-size: 25px; } }
 footer {
   background: #070829;
   padding: 1rem 2rem;

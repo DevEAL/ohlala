@@ -82,7 +82,27 @@
     }
 }
 
-@media(max-width:768px){
+@media(max-width:1220px){
+    .counter{
+        .row{
+            .counter-box{
+                #getting-started{ font-size: 60px; }
+            }
+        }
+    }
+}
+
+@media(max-width:1180px){
+    .counter{
+        .row{
+            .counter-box{
+                #getting-started{ font-size: 50px; }
+            }
+        }
+    }
+}
+
+@media(max-width:991px){
     .counter{
         margin-top: 8rem;
         background-size: cover;
@@ -91,30 +111,84 @@
             .pink-line{
                 width: 80%;
                 height: 1px;
+                top: 47%;
                 transform: translateX(-50%);
             }
-            .counter-box{ margin-bottom: 1rem; }
+            .counter-box{ 
+                padding-bottom: 2rem; 
+                #getting-started{ font-size: 70px; }
+            }
         }
     }
 }
 
-@media(max-width:414px){
+@media(max-width:768px){
+    .counter{
+        padding: 3rem;
+        .row{
+            .counter-box{
+                #getting-started{ font-size: 65px; }
+            }
+        }
+    }
+}
+
+@media(max-width:630px){
+    .counter{
+        .row{
+            .pink-line{ top: 50%; }
+            .faltan,.noviembre{ font-size: 35px; }
+            .counter-box{
+                #getting-started{ font-size: 55px; }
+                .time{
+                    span{ width: 100px; }
+                }
+                .btn-inscribe{ font-size: 20px; }
+            }
+            .description-box{
+                .edicion{
+                    font-size: 22px;
+                    margin-bottom: .4rem;
+                }
+                .ornamental{ 
+                    font-size: 45px; 
+                    margin-bottom: .8rem;
+                }
+                .date{
+                    font-size: 30px;
+                    margin-top: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:630px){
+    .counter{
+        .row{
+            .counter-box{
+                #getting-started{ font-size: 45px; }
+            }
+        }
+    }
+}
+
+@media(max-width:444px){
     .counter{
         margin-top: 8.5rem;
         padding: 2rem;
         .row{
-            .pink-line{
-                top: 52.5%;
-            }
             .faltan,.noviembre{ font-size: 25px; }
             .counter-box{
-                #getting-started{ font-size: 50px; }
+                #getting-started{ font-size: 40px; }
                 .time{
-                    span{ width: 90px; }
+                    margin-bottom: 2rem;
+                    span{
+                        width: 90px;
+                        font-size: 14px;
+                    }
                 }
-                .btn-inscribe{
-                    font-size: 16px;
-                }
+                .btn-inscribe{ font-size: 16px; }
             }
             .description-box{
                 .edicion{
@@ -128,6 +202,24 @@
                 .date{
                     font-size: 30px;
                     margin-top: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:375px){
+    .counter{
+        .row{
+            .counter-box{
+                #getting-started{
+                    font-size: 35px;
+                    .time{
+                        span{
+                            width: 70px;
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
         }

@@ -5,7 +5,7 @@ Vue.component("ornamental-edition", {
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 title">
-                    <h2>Edicion ornamental</h2>
+                    <h2>Edición ornamental</h2>
                 </div>
                 <div class="col-12 content">
                     <p>A LO LARGO DEL TIEMPO, <span>ORNAMENTAR</span> SE HA RELACIONADO CON OBJETOS QUE CUMPLEN UNA FUNCIÓN DE ADORNO MÁS QUE UTILITARIA; SIN EMBARGO, SATISFACEN NECESIDADES DE TIPO SUBJETIVO (DE CARÁCTER EMOTIVO, SENTIMENTAL O ESPIRITUAL). ASÍ NO LO CREAMOS RELEVANTE, LAS EXPERIENCIAS ESTÉTICAS SON DE GRAN IMPORTANCIA PARA LA VIDA HUMANA Y SU DESARROLLO

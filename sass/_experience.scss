@@ -87,7 +87,21 @@
     }
 }
 
-@media(max-width:414px){
+@media(max-width:598px){
+    .experience{
+        .owl-experience{
+            .owl-nav{
+                font-size: 25px;
+                bottom: 200px;
+            }
+            .owl-dots{
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:444px){
     .experience{
         padding: 1rem 0rem;
         .experience-title{
@@ -99,7 +113,6 @@
         }
         .owl-experience{
             .owl-nav{
-                font-size: 25px;
                 bottom: 160px;
                 button{
                     &.owl-prev{ left: 1%; }
