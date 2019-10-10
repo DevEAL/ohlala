@@ -6,8 +6,8 @@
   class ModelOhlala extends bd{
     function Insert ($body) {
 
-      $sql="INSERT INTO oh_Incripcion (NombreMarca,NombreResponsable, Cedula_Nit, Telefono, Correo, IdCiudad, IdCategoria, LinkMarca, Descripcion, DescripcionMarca, ProductosRelacionados, ProductoMayorValor, ProductoMenorValor, IdMedio)
-      VALUES( '{$body['NombreMarca']}','{$body['NombreResponsable']}', '{$body['Cedula_Nit']}','{$body['Telefono']}','{$body['Correo']}', '{$body['IdCiudad']}', '{$body['IdCategoria']}','{$body['LinkMarca2']}', '{$body['Descripcion']}', '{$body['DescripcionMarca']}', '{$body['ProductosRelacionados']}', '{$body['ProductoMayorValor']}',' {$body['ProductoMenorValor']}', '{$body['IdMedio']}')";
+      $sql="INSERT INTO oh_Incripcion (NombreMarca,NombreResponsable, Cedula_Nit, Telefono, Correo, IdCiudad, IdCategoria, LinkMarca, Descripcion, DescripcionMarca, ProductosRelacionados, ProductoMayorValor, ProductoMenorValor, IdMedio, portafolio)
+      VALUES( '{$body['NombreMarca']}','{$body['NombreResponsable']}', '{$body['Cedula_Nit']}','{$body['Telefono']}','{$body['Correo']}', '{$body['IdCiudad']}', '{$body['IdCategoria']}','{$body['LinkMarca2']}', '{$body['Descripcion']}', '{$body['DescripcionMarca']}', '{$body['ProductosRelacionados']}', '{$body['ProductoMayorValor']}',' {$body['ProductoMenorValor']}', '{$body['IdMedio']}', '{$body['portafolio']}')";
 
       try {
         $db = new bd();
