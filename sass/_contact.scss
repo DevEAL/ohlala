@@ -1,0 +1,90 @@
+.content-flowers{
+    position: relative;
+    .flower-one, .flower-two{
+        position: absolute;
+        width: 300px;
+    }
+    .flower-one{
+        top: 0;
+        left: 0;
+    }
+    .flower-two{
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.cont-contact {
+    padding: 4rem 0rem;
+    .contact{
+        text-align: center;
+        margin: auto;
+        font-family: $fira;
+        .title{
+            color: $oh-orange;
+            font-size: 48pt;
+            line-height: 70px;
+            font-weight: 400;
+            span{
+                font-size: 60pt;
+                font-weight: 700;
+            }
+        }
+        .parrafo{
+            color: $oh-blue;
+            font-size: 18pt;
+            line-height: 30px;
+            letter-spacing: 2px;
+        }
+    }
+    .formulario{
+        .form-group{
+            margin-bottom: 2.5rem; 
+            label{
+                font-size: 22px;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+        }
+        .send-btn{
+            input.boton{
+                background: $oh-orange;  
+                padding: .3rem 3rem;
+                font-weight: 700;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .content-flowers{
+        .flower-one, .flower-two{ width: 200px; }
+    }
+    .cont-contact {
+        padding: 2rem; 
+        .formulario{
+            .send-btn{ text-align: center; }
+        }
+    }
+}
+
+@media(max-width: 414px){
+    .content-flowers{
+        .flower-one, .flower-two{ width: 100px; }
+    }
+    .cont-contact {
+        padding: 1rem; 
+        .contact{
+            .title{
+                font-size: 40pt;
+                line-height: 60px;
+                span{ font-size: 50pt; }
+            }
+            .parrafo{ letter-spacing: 1px; }
+        }
+        .formulario{
+            .form-group{ margin-bottom: 2rem; }
+        }
+    }
+}

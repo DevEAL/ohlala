@@ -1,0 +1,110 @@
+.figures{
+    background: $oh-orange;
+    color: #fff;
+    padding: 3rem 10rem;
+    .figures-content{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        .figures-separator{
+            align-self: center;
+            margin: 0 auto;
+            .separator{
+                margin: 0 auto;
+                width: 25px;
+                height: 25px;
+                background: $oh-yellow;
+                border-radius: 50%;
+            }
+        }
+        .content{
+            position: relative;
+            p{
+                margin: 0;
+                font-family: $fira;
+                font-size: 28px;
+                line-height: 28px;
+                font-weight: 600;
+                letter-spacing: 6px;
+                span{
+                    font-size: 18px;
+                }
+                &.tx-blue{ color: $tx-blue-two; }
+                &.tx-yellow{ color: $oh-yellow; }
+                &.tx-green{ color: $oh-green; }
+            }
+            h5{
+                font-family: $playfair;
+                font-size: 140px;
+                line-height: 80px;
+                margin-bottom: 4rem;
+            }
+        }
+        .content-blue{ bottom: 5px; }
+        .content-green{ top: 30px; }
+    }
+}
+
+@media(max-width:1024px){
+    .figures{
+        padding: 3rem 4rem;
+        .figures-content{
+            .content{
+                p{
+                    font-size: 22px;
+                    line-height: 22px;
+                    letter-spacing: 4px;
+                    span{
+                        font-size: 16px;
+                    }
+                }
+                h5{
+                    font-size: 100px;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .figures{
+        padding: 2rem;
+        padding-bottom: 4rem;
+        .figures-content{
+            .content{
+                h5{
+                    font-size: 80px;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:414px){
+    .figures{
+        .figures-separator{
+            .separator{
+                margin: 1rem;
+            }
+        }
+        .figures-content{
+            .content{
+                position: relative;
+                p{
+                    font-size: 28px;
+                    line-height: 28px;
+                }
+                h5{
+                    font-size: 100px;
+                    line-height: 60px;
+                    margin-bottom: 1.5rem;
+                }
+            }
+            .content-green{ 
+                h5{ margin-bottom: 3rem;}
+            }
+        }
+    }
+}

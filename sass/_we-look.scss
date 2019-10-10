@@ -1,0 +1,70 @@
+.we-look{
+    background-image: url('../img/we_look_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4rem 12rem;
+    font-family: $fira;
+    .look-bg{
+        background: #070829e6;
+        padding: 3rem;
+        .title{
+            h2{
+                font-family: $playfair;
+                font-size: 50px;
+                font-weight: 700;
+                color: $oh-pink;
+                letter-spacing: 4px;
+                margin-top: 1rem;
+            }
+        }
+        .content{
+            p{
+                font-size: 24px;
+                color: #fff;
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin-top: 3rem;
+                span{
+                    color: $oh-pink;
+                    font-family: $playfair;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1024px){
+    .we-look{ padding: 4rem; }
+}
+
+@media(max-width:768px){
+    .we-look{
+        padding: 2rem;
+        .look-bg{ padding: 2rem; }
+    }
+}
+
+@media(max-width:414px){
+    .we-look{
+        padding: 1rem;
+        .look-bg{
+            padding: 1rem;
+            .title{
+                h2{
+                    font-size: 35px;
+                    letter-spacing: 2px;
+                }
+            }
+            .content{
+                p{
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-top: 2rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}

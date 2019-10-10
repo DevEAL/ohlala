@@ -1,0 +1,34 @@
+.section-register{
+    background: $oh-yellow;
+    padding: 4rem;
+    .content{
+        text-align: center;
+        .btn-inscribe{
+            background: $oh-purple;
+            color: #fff;
+            font-size: 50px;
+            font-family: $fira;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: .8rem 4rem;
+            text-decoration: none;
+            transition: .2s;
+            &:hover{
+                background: #4901a0;
+            }
+        }
+    }
+}
+
+@media(max-width:414px){
+    .section-register{
+        padding: 2rem;
+        .content{
+            text-align: center;
+            .btn-inscribe{
+                font-size: 30px;
+                padding: .8rem 2rem;
+            }
+        }
+    }
+}

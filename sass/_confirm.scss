@@ -1,0 +1,52 @@
+.confirm{
+    background-image: url('../img/we_look_bg.jpg');
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+    h2{
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: $fira;
+        font-weight: 700;
+        font-size: 50px;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+    }
+    .btn-regresar{
+        color: #fff;
+        text-transform: uppercase;
+        font-family: $fira;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        background: $oh-yellow;
+        padding: .3rem 4rem;
+        transition: .2s;
+        &:hover{
+            background: $tx-yellow;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .confirm{
+        img{ width: 280px; }
+        h2{ font-size: 40px; }
+    }
+}
+
+@media(max-width:768px){
+    .confirm{
+        img{ width: 280px; }
+        h2{ font-size: 40px; }
+    }
+}
