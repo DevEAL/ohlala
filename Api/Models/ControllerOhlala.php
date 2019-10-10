@@ -12,9 +12,9 @@
       $response = $model->Insert($body);
 
       if ($response) {
-        return utils::exito("Registro Exitoso");
+        return true;
       } else {
-        return utils::error("Error de Insercion");
+        return false;
       }
     }
 

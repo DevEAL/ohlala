@@ -84,11 +84,11 @@ Vue.component("announcement", {
           </div>
           <div class="form-group">
             <label for="">PRODUCTO DE MAYOR VALOR*</label>
-            <input type="text" class="form-control" name="ProductoMayorValor" required>
+            <input type="text" class="form-control" name="ProductoMayorValor" placeholder="Precio en número" required>
           </div>
           <div class="form-group borde">
             <label for="">PRODUCTO DE MENOR VALOR*</label>
-            <input type="text" class="form-control" name="ProductoMenorValor" required>
+            <input type="text" class="form-control" name="ProductoMenorValor" placeholder="Precio en número" required>
           </div>
           <div class="form-group">
             <label for="">¿POR QUÉ MEDIO SE ENTERÓ DE LA FERIA?*</label>

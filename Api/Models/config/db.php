@@ -8,12 +8,21 @@ class bd{
     private $charset;
 
     public function __construct(){
-        $this->host     = 'localhost';
-        $this->db       = 'rxpjfcmy_ohlala';
-        $this->user     = 'rxpjfcmy_ohlala';
-        $this->password = "Enalgun1*";
-        //$this->password = "6#vWHD_$";
-        $this->charset  = 'utf8_general_ci';
+        $url = $_SERVER["HTTP_HOST"];
+
+        if ($url == 'localhost:8080') {
+            $this->host     = 'localhost';
+            $this->db       = 'ohlala';
+            $this->user     = 'root';
+            $this->password = "";
+            $this->charset  = 'utf8_general_ci';
+        } else {
+            $this->host     = 'localhost';
+            $this->db       = 'rxpjfcmy_ohlala';
+            $this->user     = 'rxpjfcmy_ohlala';
+            $this->password = "Enalgun1*";
+            $this->charset  = 'utf8_general_ci';
+        }
     }
 
     //mysql -e "USE todolistdb; select*from todolist" --user=azure --password=6#vWHD_$ --port=49175 --bind-address=52.176.6.0
