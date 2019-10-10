@@ -1,0 +1,20 @@
+Vue.component("ornamental-edition", {
+    template: // html
+    `
+    <div class="ornamental-edition">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 title">
+                    <h2>Edicion ornamental</h2>
+                </div>
+                <div class="col-12 content">
+                    <p>A LO LARGO DEL TIEMPO, <span>ORNAMENTAR</span> SE HA RELACIONADO CON OBJETOS QUE CUMPLEN UNA FUNCIÓN DE ADORNO MÁS QUE UTILITARIA; SIN EMBARGO, SATISFACEN NECESIDADES DE TIPO SUBJETIVO (DE CARÁCTER EMOTIVO, SENTIMENTAL O ESPIRITUAL). ASÍ NO LO CREAMOS RELEVANTE, LAS EXPERIENCIAS ESTÉTICAS SON DE GRAN IMPORTANCIA PARA LA VIDA HUMANA Y SU DESARROLLO
+                    EN TODOS LOS ASPECTOS.</p>
+                    <p class="my-5">POR ESTA RAZÓN, PARA ESTA EDICIÓN HEMOS DECIDIDO CREAR UN UNIVERSO ORNAMENTAL, DONDE SE REUNIRÁN VARIOS EXPOSITORES BAJO EL CONCEPTO DE ORNAMENTAR CUERPO, ALMA, MENTE Y ESPACIO DESDE DIFERENTES CATEGORÍAS COMO ACCESORIOS, ARTE, BELLEZA, DECORACIÓN, GASTRONOMÍA, MODA, ENTRE OTRAS.</p>
+                    <p>CON ESTA EDICIÓN QUEREMOS RESALTAR EL HECHO DE ORNAMENTAR, COMO LA EXPERIENCIA DE ENRIQUECER NUESTRAS VIDAS A TRAVÉS DE OBJETOS ESTÉTICOS MEDIANTE LOS CUALES NOS EXPRESAMOS E IDENTIFICAMOS.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    `
+})

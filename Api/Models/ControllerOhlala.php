@@ -1,6 +1,6 @@
 <?php
   include_once 'ModelOhlala.php';
-  include_once 'utils.php';
+  include_once 'utils/utils.php';
 
   class ControllerOhlala {
     private $error;

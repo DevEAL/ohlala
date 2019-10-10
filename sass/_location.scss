@@ -1,0 +1,90 @@
+.location{
+    background: $oh-orange;
+    color: #fff;
+    font-family: $fira;
+    padding: 4rem;
+    .row{
+        display: flex;
+        align-items: center;
+    }
+    .content{
+        .section-icon{
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            .line-icon{
+                position: relative;
+                transform: translateY(-2px);
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 40px;
+                    height: 4px;
+                    background: #fff;
+                }
+            }
+            img{
+                margin-left:60px;
+                width: 40px;
+            }
+        }
+        .tx-content{
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 36px;
+            margin: none;
+            span{
+                font-weight: 700;
+            }
+        }
+    }
+    .section-img{
+        text-align: center;
+        img{ width: 100%; }
+        p{
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media(max-width:768px){
+    .location{
+        padding: 2rem;
+        .content{
+            .section-icon{
+                justify-content: center;
+                .line-icon{
+                    position: relative;
+                    transform: translateY(-2px);
+                    &::before{
+                        transform: translateX(-20px);
+                    }
+                }
+                img{
+                    margin-left:40px;
+                    margin-right: 40px;
+                }
+            }
+            .tx-content{ text-align: center; }
+        }.section-img{
+            img{ width: 80%; }
+        }
+    }
+}
+
+@media(max-width:414px){
+    .location{
+        padding: 0rem;
+        .content{
+            .tx-content{
+                font-size: 22px;
+                line-height: 32px;
+            }
+        }
+    }
+}

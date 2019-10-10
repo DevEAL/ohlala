@@ -10,7 +10,7 @@ Vue.component("countdowns", {
         <div class="time">
           <span>Dias</span><span>Horas</span><span>Minutos</span>
         </div>
-        <button class="btn-inscribe">Inscribete </button>
+        <router-link to="/inscription" class="btn-inscribe">Inscribete </router-link>
       </div>
       <div class="pink-line"></div>
       <div class="col-lg-6 description-box">

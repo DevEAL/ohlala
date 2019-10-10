@@ -8,11 +8,15 @@ const Contact = {
 const announcement = {
   template: '#announcement'
 }
+const inscription = {
+  template: '#inscription'
+}
 
 const routes = [
   { path: '/', component: Home },
   { path: '/announcement', component: announcement },
-  { path: '/Contact', component: Contact }
+  { path: '/Contact', component: Contact },
+  { path: '/inscription', component: inscription}
 ]
 
 // Constantes de rutas

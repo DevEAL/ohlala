@@ -1,0 +1,49 @@
+.ornamental-edition{
+    background: $oh-purple;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 4rem 12rem;
+    font-family: $fira;
+    .title{
+        h2{
+            font-size: 50px;
+            font-weight: 700;
+            color: $oh-pink;
+            letter-spacing: 4px;
+            margin-top: 1rem;
+        }
+    }
+    .content{
+        p{
+            font-size: 24px;
+            color: #fff;
+            font-weight: 600;
+            span{
+                color: $oh-pink;
+            }
+        }
+    }
+}
+
+@media(max-width:1024px){
+    .ornamental{ padding: 4rem 8rem; }
+}
+
+@media(max-width:768px){
+    .ornamental{ padding: 4rem; }
+}
+
+@media(max-width:414px){
+    .ornamental{
+        padding: 1rem;
+        .title{
+            h2{ font-size: 40px; }
+        }
+        .content{
+            p{
+                font-size: 20px;
+                line-height: 24px
+            }
+        }
+    }
+}
