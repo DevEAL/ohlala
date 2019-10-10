@@ -8,7 +8,7 @@ Vue.component("countdowns", {
         <h4 class="faltan">Faltan</h4>
         <div id="getting-started"></div>
         <div class="time">
-          <span>Dias</span><span>Horas</span><span>Minutos</span>
+          <span>Dias</span><span>Horas</span><span>Minutos</span><span>Segundos</span>
         </div>
         <router-link to="/inscription" class="btn-inscribe">Inscribete </router-link>
       </div>
@@ -21,6 +21,5 @@ Vue.component("countdowns", {
       </div>
     </div>
   </div>
-  
   `
 })

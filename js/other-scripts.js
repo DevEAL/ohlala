@@ -10,7 +10,7 @@ $(document).ready(function(){
     $("#getting-started")
     .countdown("2019/11/16", function(event) {
       $(this).text(
-        event.strftime('%D : %H : %M')
+        event.strftime('%D : %H : %M : %S' )
       );
     });
 
